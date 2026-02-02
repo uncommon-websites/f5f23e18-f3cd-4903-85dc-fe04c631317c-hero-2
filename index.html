@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golee - Sports Club Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F5F5F4;
+        }
+        .smooth-corners {
+            border-radius: 2.5rem;
+        }
+    </style>
+</head>
+<body class="bg-[#F5F5F4] text-[#111] min-h-screen flex flex-col overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="w-full px-6 py-5 md:px-10 flex justify-between items-center max-w-[1600px] mx-auto bg-[#F5F5F4]">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-black">
+                <rect x="10" y="10" width="4" height="4" fill="currentColor"/>
+                <rect x="10" y="3" width="4" height="4" fill="currentColor"/>
+                <rect x="10" y="17" width="4" height="4" fill="currentColor"/>
+                <rect x="3" y="10" width="4" height="4" fill="currentColor"/>
+                <rect x="17" y="10" width="4" height="4" fill="currentColor"/>
+            </svg>
+            <span class="text-2xl font-medium tracking-tight">GOLEE</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8 text-[15px] font-medium text-gray-800">
+            <a href="#" class="hover:text-black transition-colors">Features</a>
+            <a href="#" class="hover:text-black transition-colors">Solutions</a>
+            <a href="#" class="hover:text-black transition-colors">Compliance</a>
+            <a href="#" class="hover:text-black transition-colors">CSI Partnership</a>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#" class="bg-[#151515] text-white text-[15px] font-medium px-5 py-2.5 rounded-lg hover:bg-black/80 transition-colors">
+            Sign Up
+        </a>
+    </nav>
+
+    <!-- Announcement Bar -->
+    <div class="w-full bg-[#0ea5e9] text-white py-3 px-4 flex justify-center items-center text-[13px] md:text-sm font-normal tracking-wide">
+        <span class="text-center">Official CSI Partner: Automate your sports club management and regulatory compliance.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-2 opacity-90 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+        </svg>
+    </div>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex flex-col items-center pt-20 md:pt-24 w-full">
+        
+        <!-- Hero Text -->
+        <div class="text-center max-w-4xl px-4 mb-20 z-10">
+            <h1 class="text-5xl md:text-[64px] leading-[1.05] font-medium text-[#111] tracking-tighter mb-6">
+                The operating system <br> for Italian sports clubs.
+            </h1>
+            <p class="text-[#555] text-lg md:text-[19px] leading-relaxed max-w-2xl mx-auto font-normal tracking-normal">
+                Streamline member management, automate manual paperwork, and manage payments in one centralized platform. Scalable solutions for 20,000+ amateur clubs.
+            </p>
+            <div class="mt-10">
+                <a href="#" class="bg-[#151515] text-white text-[15px] font-medium px-8 py-3.5 rounded-lg hover:bg-black transition-colors inline-block">
+                    Book a Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Image Carousel / Grid -->
+        <div class="w-full relative mt-4 mb-10">
+            <!-- Flex container centered horizontally, items centered vertically to create the wave effect -->
+            <div class="flex items-center justify-center gap-6 px-4 min-w-max">
+                
+                <!-- 1. Tennis (Left edge) -->
+                <div class="relative w-40 h-64 smooth-corners overflow-hidden flex-shrink-0 opacity-90">
+                     <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/f5f23e18-f3cd-4903-85dc-fe04c631317c/hero-2-img-0-1770070490037.png" class="w-full h-full object-cover" alt="Tennis Court">
+                </div>
+
+                <!-- 2. Climber (Tall) -->
+                <div class="relative w-64 h-[440px] smooth-corners overflow-hidden flex-shrink-0">
+                    <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/f5f23e18-f3cd-4903-85dc-fe04c631317c/hero-2-img-1-1770070489950.png" class="w-full h-full object-cover" alt="Rock Climbing">
+                </div>
+
+                <!-- 3. Couple (Wide) -->
+                <div class="relative w-[340px] h-[260px] smooth-corners overflow-hidden flex-shrink-0">
+                    <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/f5f23e18-f3cd-4903-85dc-fe04c631317c/hero-2-img-2-1770070490895.png" class="w-full h-full object-cover" alt="Couple on Bench">
+                </div>
+
+                <!-- 4. Biker (Square-ish) -->
+                <div class="relative w-[300px] h-[300px] smooth-corners overflow-hidden flex-shrink-0">
+                    <img src="https://placehold.co/700x700/556B2F/FFFFFF/png?text=Biking" class="w-full h-full object-cover" alt="Mountain Biking">
+                </div>
+
+                <!-- 5. Runner (Square-ish) -->
+                <div class="relative w-[280px] h-[280px] smooth-corners overflow-hidden flex-shrink-0">
+                    <img src="https://placehold.co/700x700/D2691E/FFFFFF/png?text=Running" class="w-full h-full object-cover" alt="Beach Running">
+                </div>
+
+                <!-- 6. Skier (Tallest) -->
+                <div class="relative w-[240px] h-[500px] smooth-corners overflow-hidden flex-shrink-0"> 
+                    <img src="https://placehold.co/600x1000/0066CC/FFFFFF/png?text=Skiing" class="w-full h-full object-cover" alt="Skiing">
+                </div>
+
+                <!-- 7. Park (Wide) -->
+                <div class="relative w-[320px] h-[240px] smooth-corners overflow-hidden flex-shrink-0">
+                    <img src="https://placehold.co/800x600/228B22/FFFFFF/png?text=Park" class="w-full h-full object-cover" alt="Park Relaxing">
+                </div>
+                
+                 <!-- 8. Right Edge -->
+                <div class="relative w-24 h-64 rounded-l-[2.5rem] overflow-hidden flex-shrink-0 opacity-90">
+                     <img src="https://placehold.co/200x600/4682B4/FFFFFF/png?text=Sea" class="w-full h-full object-cover" alt="Sea View">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
